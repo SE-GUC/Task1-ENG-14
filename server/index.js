@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 
 const students = [
+    { id: "40-6360", name: "Ahmed Reyad", github_username: "ahmedreyad2019", email: "ahmed.reyad@student.guc.edu.eg" },
     { id: "28-09121", name: "Omar Sherif", github_username: "osheriff", email: "omarr@whatever.com" },
     { id: "21-094123", name: "Mathew White", github_username: "matheww", email: "matheww@whatever.com" },
     { id: "15-10312", name: "Dom Sundle", github_username: "domss", email: "domss.whatever.com" },
