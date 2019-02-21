@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 const students = [
-    { id: "37-2496", name: "Ziad Darwiish", github_username: "ziadDarwish", email: "ziaddarwish97@yahoo.com" },{ id: "37-2496", name: "Ziad Darwish", github_username: "ziadDarwish", email: "ziaddarwish97@yahoo.com" ];
+    { id: "37-2496", name: "Ziad Darwish", github_username: "ziadDarwish", email: "ziaddarwish97@yahoo.com" }];
 
 app.get('/', (request, response) => {
     response.send(`<a href="/api/students">Students</a>`);
