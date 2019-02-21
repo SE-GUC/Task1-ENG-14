@@ -2,12 +2,10 @@ const express = require('express');
 const app = express();
 
 const students = [
-    { id: "37-2496", name: "Ziad Darwish", github_username: "ziadDarwish", email: "ziaddarwish97@yahoo.com" }];
-
+    { id: "37-2496", name: "Ziad Amr  Darwish", github_username: "ziadDarwish", email: "ziaddarwish97@yahoo.com" }];
 app.get('/', (request, response) => {
     response.send(`<a href="/api/students">Students</a>`);
 });
-
 app.get('/api/students', (request, response) => {
     let data = "";
     students.forEach((value) => {
@@ -17,7 +15,6 @@ app.get('/api/students', (request, response) => {
     });
     response.send(data);
 });
-
 app.get('/api/students/:id', (request, response) => {
     var data = "";
     students.forEach((value) => {
@@ -28,6 +25,5 @@ app.get('/api/students/:id', (request, response) => {
     });
     response.send(data || 'No student matches the requested id');
 });
-
 const port = 3000;
 app.listen(port, () => console.log(`Listening on port ${port}`));
